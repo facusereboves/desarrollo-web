@@ -1,0 +1,49 @@
+/* general para todo*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+}
+
+main{
+    background-color: rgb(20, 20, 88);
+}
+
+h1,h2, h3,h4{
+    font-family: "Inter", serif;
+}
+
+* p, a{
+    font-family: "Lato", serif;
+}
+
+
+
+header img{
+    width: auto;
+    height: 2.5rem;
+}
+
+
+main{
+    background-color: rgb(26, 26, 90);
+}
+
+.intro-principal{
+    color: white;
+}
+
+.titulos-p{
+    color: white;
+}
+
+.mi-boton{
+    margin-right: 100px;
+    color: rgb(2, 16, 221);
+    background-color: yellow;
+}
