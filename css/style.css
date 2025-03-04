@@ -6,11 +6,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     overflow-x: hidden;
 }
 
-main{
+.colorPrincipal{
     background-color: rgb(20, 20, 88);
 }
 
@@ -28,11 +29,6 @@ header img{
     height: 2.5rem;
 }
 
-
-.intro-principal{
-    color: white;
-}
-
 .titulos-p{
     color: white;
 }
@@ -42,3 +38,4 @@ header img{
     color: rgb(2, 16, 221);
     background-color: yellow;
 }
+
