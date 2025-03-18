@@ -7,12 +7,12 @@
     box-sizing: border-box;
 }
 
-body {
-    overflow-x: hidden;
+.colorPrincipal{
+    background-color: rgb(7, 7, 48);
 }
 
-.colorPrincipal{
-    background-color: rgb(20, 20, 88);
+.colorSecundario{
+    background-color: rgb(255, 255, 255);
 }
 
 h1,h2, h3,h4{
@@ -23,10 +23,16 @@ h1,h2, h3,h4{
     font-family: "Lato", serif;
 }
 
-
-header img{
-    width: auto;
-    height: 2.5rem;
+header{
+        position: sticky;
+        top:0;
+        z-index: 1000;
+        
+        img{
+            width: auto;
+            height: 2.5rem;
+        }
+    
 }
 
 .titulos-p{
@@ -39,3 +45,175 @@ header img{
     background-color: yellow;
 }
 
+@media (max-width: 769px) {
+    .bottonContenedor {
+        display: flex !important;
+        justify-content: center !important;
+    }
+    .mi-boton{
+        margin-right: 0 !important;
+    }
+}
+
+/*novedades*/
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "titulo titulo titulo fichaje fichaje"
+    "partidos partidos partidos fichaje fichaje"
+    "partidos partidos partidos fichaje fichaje"
+    "lesion lesion lesion bajas bajas"
+    "lesion lesion lesion bajas bajas"
+    "lesion lesion lesion bajas bajas";
+    gap: .5rem;
+    padding-top: .625rem;
+    padding-right: .625rem;
+    padding-left: .625rem;
+}
+
+.dia{
+    color: #050505;
+    grid-area: titulo;
+}
+
+.ultimos-partidos{
+    background-color: #ffffff;
+    grid-area: partidos;
+}
+
+.lesionados{
+    background-color:#ffffff;
+    grid-area: lesion;
+}
+
+.incorporaciones{
+    background-color:#ffffff;
+    grid-area: fichaje;
+}
+
+.transferidos{
+    background-color:#ffffff;
+    grid-area: bajas;
+}
+
+@media (max-width: 768px) {
+    .contenedor{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "titulo titulo"
+    "partidos partidos"
+    "lesion lesion"
+    "fichaje fichaje"
+    "bajas bajas";
+    }
+}
+
+.btn-hover:hover {
+    background-color: #FFD700 !important;
+    color: #0D47A1 !important;
+    border-color: #0D47A1 !important;
+}
+
+.form-control:focus {
+    border-color: #0D47A1 !important;
+    box-shadow: 0 0 10px rgba(13, 71, 161, 0.5) !important;
+}
+
+/*Historia*/
+
+.copas{
+    width: 200px;
+}
+
+.video {
+    display: flex;
+    justify-content: center; 
+    width: 100%;
+}
+
+.videoYoutube {
+    width: 80%; 
+    max-width: 560px;
+    height: 315px; 
+}
+
+@media (max-width: 769px) {
+    .historia-uno {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center;
+    }
+
+    .historia-uno div:first-child { 
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .img-equipo {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .invertir{
+        flex-direction: column-reverse;
+    }
+}
+
+/* contacto*/
+
+/* Estilos específicos para la página de contacto */
+.contacto-page {
+    background-color: #f8f9fa;
+}
+
+.contacto-title {
+    color: #0066cc;
+}
+
+.contacto-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.contacto-form {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.contacto-label {
+    font-weight: bold;
+}
+
+.contacto-input {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.contacto-btn {
+    min-width: 100px;
+}
+
+
+/*footer*/
+footer {
+    background-color: #0d47a1; /* Azul de Boca */
+    color: white;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #ffd700; /* Amarillo Boca */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: white;
+}
