@@ -27,12 +27,11 @@ header{
         position: sticky;
         top:0;
         z-index: 1000;
-        
-        img{
-            width: auto;
-            height: 2.5rem;
-        }
-    
+}
+
+header img{
+    width: auto;
+    height: 2.5rem;
 }
 
 .titulos-p{
