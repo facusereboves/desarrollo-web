@@ -1,0 +1,44 @@
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+    "titulo titulo titulo fichaje fichaje"
+    "partidos partidos partidos fichaje fichaje"
+    "partidos partidos partidos fichaje fichaje"
+    "lesion lesion lesion bajas bajas"
+    "lesion lesion lesion bajas bajas"
+    "lesion lesion lesion bajas bajas";
+    gap: .5rem;
+    padding: .625rem;
+    
+    .dia {
+    color: #050505;
+    grid-area: titulo;
+    }
+
+    .ultimos-partidos, 
+    .lesionados, 
+    .incorporaciones, 
+    .transferidos {
+    background-color: #ffffff;
+    }
+
+    .ultimos-partidos { grid-area: partidos; }
+    .lesionados { grid-area: lesion; }
+    .incorporaciones { grid-area: fichaje; }
+    .transferidos { grid-area: bajas; }
+}
+
+@media (max-width: 768px) {
+    .contenedor {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+        "titulo titulo"
+        "partidos partidos"
+        "lesion lesion"
+        "fichaje fichaje"
+        "bajas bajas";
+}
+}

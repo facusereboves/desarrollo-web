@@ -1,0 +1,19 @@
+.colorPrincipal {
+    background-color: $color-principal;
+}
+
+.colorSecundario {
+    background-color: $color-secundario;
+}
+
+h1, h2, h3, h4 {
+    font-family: $fuente-principal;
+}
+
+p, a {
+    font-family: $fuente-secundaria;
+}
+
+.titulos-p {
+    color: white;
+}

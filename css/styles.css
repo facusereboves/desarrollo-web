@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.colorPrincipal {
+  background-color: rgb(7, 7, 48);
+}
+
+.colorSecundario {
+  background-color: rgb(255, 255, 255);
+}
+
+h1, h2, h3, h4 {
+  font-family: "Inter", serif;
+}
+
+p, a {
+  font-family: "Lato", serif;
+}
+
+.titulos-p {
+  color: white;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+header img {
+  width: auto;
+  height: 2.5rem;
+}
+
+footer {
+  background-color: #0d47a1;
+  color: white;
+  padding: 20px 0;
+}
+footer a {
+  color: #FFD700;
+  font-weight: bold;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.mi-boton {
+  margin-right: 100px;
+  color: rgb(2, 16, 221);
+  background-color: yellow;
+}
+
+@media (max-width: 769px) {
+  .bottonContenedor {
+    display: flex !important;
+    justify-content: center !important;
+  }
+  .mi-boton {
+    margin-right: 0 !important;
+  }
+}
+.mi-boton {
+  margin-right: 100px;
+  color: rgb(2, 16, 221);
+  background-color: yellow;
+}
+
+@media (max-width: 769px) {
+  .bottonContenedor {
+    display: flex !important;
+    justify-content: center !important;
+  }
+  .mi-boton {
+    margin-right: 0 !important;
+  }
+}
+.copas {
+  width: 200px;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.video .videoYoutube {
+  width: 80%;
+  max-width: 560px;
+  height: 315px;
+}
+
+@media (max-width: 769px) {
+  .historia-uno {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center;
+  }
+  .historia-uno div:first-child {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .historia-uno .img-equipo {
+    width: 100%;
+    max-width: 400px;
+  }
+  .historia-uno .invertir {
+    flex-direction: column-reverse;
+  }
+}
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas: "titulo titulo titulo fichaje fichaje" "partidos partidos partidos fichaje fichaje" "partidos partidos partidos fichaje fichaje" "lesion lesion lesion bajas bajas" "lesion lesion lesion bajas bajas" "lesion lesion lesion bajas bajas";
+  gap: 0.5rem;
+  padding: 0.625rem;
+}
+.contenedor .dia {
+  color: #050505;
+  grid-area: titulo;
+}
+.contenedor .ultimos-partidos,
+.contenedor .lesionados,
+.contenedor .incorporaciones,
+.contenedor .transferidos {
+  background-color: #ffffff;
+}
+.contenedor .ultimos-partidos {
+  grid-area: partidos;
+}
+.contenedor .lesionados {
+  grid-area: lesion;
+}
+.contenedor .incorporaciones {
+  grid-area: fichaje;
+}
+.contenedor .transferidos {
+  grid-area: bajas;
+}
+
+@media (max-width: 768px) {
+  .contenedor {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: "titulo titulo" "partidos partidos" "lesion lesion" "fichaje fichaje" "bajas bajas";
+  }
+}
+.btn-hover:hover {
+  background-color: #FFD700 !important;
+  color: #0d47a1 !important;
+  border-color: #0d47a1 !important;
+}
+
+.form-control:focus {
+  border-color: #0d47a1 !important;
+  box-shadow: 0 0 10px rgba(13, 71, 161, 0.5) !important;
+}
+
+.contacto-page {
+  background-color: #f8f9fa;
+}
+.contacto-page .contacto-title {
+  color: #0066cc;
+}
+.contacto-page .contacto-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+.contacto-page .contacto-form {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+}
+.contacto-page .contacto-label {
+  font-weight: bold;
+}
+.contacto-page .contacto-input {
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+.contacto-page .contacto-btn {
+  min-width: 100px;
+}/*# sourceMappingURL=styles.css.map */

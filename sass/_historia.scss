@@ -1,0 +1,38 @@
+.copas {
+    width: 200px;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    .videoYoutube {
+    width: 80%;
+    max-width: 560px;
+    height: 315px;
+    }
+}
+
+@media (max-width: 769px) {
+    .historia-uno {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center;
+
+    div:first-child {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .img-equipo {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .invertir {
+        flex-direction: column-reverse;
+    }
+    }
+}

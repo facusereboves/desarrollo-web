@@ -1,0 +1,30 @@
+.contacto-page {
+    background-color: #f8f9fa;
+
+    .contacto-title {
+    color: #0066cc;
+    }
+
+    .contacto-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    }
+.contacto-form {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.contacto-label {
+    font-weight: bold;
+}
+
+.contacto-input {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.contacto-btn {
+    min-width: 100px;
+}
+}

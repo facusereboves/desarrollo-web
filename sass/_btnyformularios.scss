@@ -1,0 +1,10 @@
+.btn-hover:hover {
+    background-color: $color-amarillo !important;
+    color: $color-azul-boca !important;
+    border-color: $color-azul-boca !important;
+}
+
+.form-control:focus {
+    border-color: $color-azul-boca !important;
+    box-shadow: 0 0 10px rgba(13, 71, 161, 0.5) !important;
+}

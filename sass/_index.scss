@@ -1,0 +1,15 @@
+.mi-boton {
+    margin-right: 100px;
+    color: rgb(2, 16, 221);
+    background-color: yellow;
+}
+
+@media (max-width: 769px) {
+    .bottonContenedor {
+    display: flex !important;
+    justify-content: center !important;
+    }
+    .mi-boton {
+        margin-right: 0 !important;
+    }
+}
