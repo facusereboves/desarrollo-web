@@ -4,38 +4,37 @@ header {
     z-index: 1000;
 
     img {
-    width: auto;
-    height: 2.5rem;
+        width: auto;
+        height: 2.5rem;
     }
 }
 
 footer {
-    background-color: $color-azul-boca;
-    color: white;
+    background-color: map-get($colores, azul-boca);
+    color: map-get($colores, secundario);
     padding: 20px 0;
 
     a {
-    color: $color-amarillo;
-    font-weight: bold;
-    text-decoration: none;
+        color: map-get($colores, amarillo);
+        font-weight: bold;
+        text-decoration: none;
 
-&:hover {
-    text-decoration: underline;
-    color: white;
+        &:hover {
+            text-decoration: underline;
+            color: map-get($colores, secundario);
+        }
     }
-}
 }
 
 .mi-boton {
     margin-right: 100px;
-    color: rgb(2, 16, 221);
-    background-color: yellow;
+    color: map-get($colores, azul-boca);
+    background-color: map-get($colores, amarillo);
 }
 
 @media (max-width: 769px) {
     .bottonContenedor {
-    display: flex !important;
-    justify-content: center !important;
+        @include centrar-flex;
     }
     .mi-boton {
         margin-right: 0 !important;

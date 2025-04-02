@@ -1,15 +1,19 @@
-.mi-boton {
-    margin-right: 100px;
-    color: rgb(2, 16, 221);
-    background-color: yellow;
-}
-
 @media (max-width: 769px) {
     .bottonContenedor {
-    display: flex !important;
-    justify-content: center !important;
+        @include centrar-flex;
     }
     .mi-boton {
         margin-right: 0 !important;
+    }
+}
+
+@keyframes agrandarImagen {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
     }
 }

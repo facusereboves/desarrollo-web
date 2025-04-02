@@ -22,7 +22,7 @@ p, a {
 }
 
 .titulos-p {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 header {
@@ -37,7 +37,7 @@ header img {
 
 footer {
   background-color: #0d47a1;
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 20px 0;
 }
 footer a {
@@ -47,13 +47,13 @@ footer a {
 }
 footer a:hover {
   text-decoration: underline;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .mi-boton {
   margin-right: 100px;
-  color: rgb(2, 16, 221);
-  background-color: yellow;
+  color: #0d47a1;
+  background-color: #FFD700;
 }
 
 @media (max-width: 769px) {
@@ -65,12 +65,6 @@ footer a:hover {
     margin-right: 0 !important;
   }
 }
-.mi-boton {
-  margin-right: 100px;
-  color: rgb(2, 16, 221);
-  background-color: yellow;
-}
-
 @media (max-width: 769px) {
   .bottonContenedor {
     display: flex !important;
@@ -78,6 +72,16 @@ footer a:hover {
   }
   .mi-boton {
     margin-right: 0 !important;
+  }
+}
+@keyframes agrandarImagen {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
   }
 }
 .copas {
@@ -85,8 +89,8 @@ footer a:hover {
 }
 
 .video {
-  display: flex;
-  justify-content: center;
+  display: flex !important;
+  justify-content: center !important;
   width: 100%;
 }
 .video .videoYoutube {
@@ -98,12 +102,12 @@ footer a:hover {
 @media (max-width: 769px) {
   .historia-uno {
     display: flex !important;
+    justify-content: center !important;
     flex-wrap: wrap !important;
-    justify-content: center;
   }
   .historia-uno div:first-child {
-    display: flex;
-    justify-content: center;
+    display: flex !important;
+    justify-content: center !important;
     width: 100%;
   }
   .historia-uno .img-equipo {
@@ -114,6 +118,17 @@ footer a:hover {
     flex-direction: column-reverse;
   }
 }
+.escudo-animado {
+  animation: agrandarImagen 1s ease-out;
+}
+
+.efecto-hover {
+  transition: transform 0.3s ease-in-out;
+}
+.efecto-hover:hover {
+  transform: scale(1.3);
+}
+
 .contenedor {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -123,14 +138,14 @@ footer a:hover {
   padding: 0.625rem;
 }
 .contenedor .dia {
-  color: #050505;
+  color: rgb(7, 7, 48);
   grid-area: titulo;
 }
 .contenedor .ultimos-partidos,
 .contenedor .lesionados,
 .contenedor .incorporaciones,
 .contenedor .transferidos {
-  background-color: #ffffff;
+  background-color: rgb(255, 255, 255);
 }
 .contenedor .ultimos-partidos {
   grid-area: partidos;
@@ -164,17 +179,17 @@ footer a:hover {
 }
 
 .contacto-page {
-  background-color: #f8f9fa;
+  background-color: rgb(255, 255, 255);
 }
 .contacto-page .contacto-title {
-  color: #0066cc;
+  color: #0d47a1;
 }
 .contacto-page .contacto-text {
   font-size: 1.1rem;
   line-height: 1.6;
 }
 .contacto-page .contacto-form {
-  background-color: #ffffff;
+  background-color: rgb(255, 255, 255);
   padding: 2rem;
   border-radius: 10px;
 }
@@ -187,4 +202,15 @@ footer a:hover {
 }
 .contacto-page .contacto-btn {
   min-width: 100px;
+}
+
+.img-container {
+  overflow: hidden;
+}
+
+.efecto-bombonera {
+  transition: transform 0.3s ease-in-out;
+}
+.efecto-bombonera:hover {
+  transform: scale(1.1);
 }/*# sourceMappingURL=styles.css.map */

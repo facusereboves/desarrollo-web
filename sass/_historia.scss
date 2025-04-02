@@ -3,36 +3,45 @@
 }
 
 .video {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+    @include centrar-flex;
+    width: $ancho-total;
 
     .videoYoutube {
-    width: 80%;
-    max-width: 560px;
-    height: 315px;
+        width: 80%;
+        max-width: 560px;
+        height: 315px;
     }
 }
 
 @media (max-width: 769px) {
     .historia-uno {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    justify-content: center;
+        @include centrar-flex;
+        flex-wrap: wrap !important;
 
-    div:first-child {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
+        div:first-child {
+            @include centrar-flex;
+            width: $ancho-total;
+        }
 
-    .img-equipo {
-        width: 100%;
-        max-width: 400px;
-    }
+        .img-equipo {
+            width: $ancho-total;
+            max-width: 400px;
+        }
 
-    .invertir {
-        flex-direction: column-reverse;
+        .invertir {
+            flex-direction: column-reverse;
+        }
     }
+}
+
+.escudo-animado {
+    animation: agrandarImagen 1s ease-out;
+}
+
+.efecto-hover{
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+        transform: scale(1.3);
     }
 }

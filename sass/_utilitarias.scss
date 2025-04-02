@@ -1,9 +1,9 @@
 .colorPrincipal {
-    background-color: $color-principal;
+    background-color: map-get($colores, principal);
 }
 
 .colorSecundario {
-    background-color: $color-secundario;
+    background-color: map-get($colores, secundario);
 }
 
 h1, h2, h3, h4 {
@@ -15,5 +15,5 @@ p, a {
 }
 
 .titulos-p {
-    color: white;
+    color: map-get($colores, secundario);
 }
