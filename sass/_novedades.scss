@@ -1,3 +1,7 @@
+.colorSecundario {
+    background-color: map-get($colores, secundario);
+}
+
 .contenedor {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -11,17 +15,29 @@
         "lesion lesion lesion bajas bajas";
     gap: .5rem;
     padding: .625rem;
-    
+
     .dia {
-        color: map-get($colores, principal);
         grid-area: titulo;
+        @include centrar-flex;
+
+        h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            color: map-get($colores, amarillo);
+            text-shadow: 1px 1px 4px map-get($colores, azul-boca);
+        }
     }
 
-    .ultimos-partidos, 
-    .lesionados, 
-    .incorporaciones, 
+    .ultimos-partidos,
+    .lesionados,
+    .incorporaciones,
     .transferidos {
-        background-color: map-get($colores, secundario);
+        background-color: map-get($colores, azul-boca);
+        color: map-get($colores, amarillo);
+        border: 2px solid map-get($colores, principal);
+        border-radius: 12px;
+        padding: 1rem;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
     }
 
     .ultimos-partidos { grid-area: partidos; }
@@ -30,6 +46,7 @@
     .transferidos { grid-area: bajas; }
 }
 
+// MEDIA QUERY RESPONSIVE
 @media (max-width: 768px) {
     .contenedor {
         grid-template-columns: 1fr 1fr;
